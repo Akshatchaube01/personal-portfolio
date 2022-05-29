@@ -1,0 +1,355 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/image1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 8px;
+    position:relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height:2px;
+    background:rgb(0, 0, 0);
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:aliceblue;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size: 62px;
+    transition: 1s;
+}
+
+.text-box h1:hover{
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 14px;
+    color: aliceblue;
+}
+.button1{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    transition:0.5s;
+}
+.button1:hover{
+    background-color: rgb(0, 0, 0);
+}
+nav .fa{
+    display: none;
+}
+
+/*----- COURSES OFFERED ---*/
+
+.course{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.course h1{
+    font-size:36px;
+    font-weight: 600;
+    transition: 1s;
+}
+.course h1:hover{
+    font-size: 45px;
+}
+
+.course p{
+    color: grey;
+    font-size: 14px;
+    font-weight:300;
+    line-height: 22px;
+    padding:10px;
+}
+
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: rgb(233, 247, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    transition:1s;
+}
+.course-col h3:hover{
+    font-size: 25px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.campuses{
+    width: 80%;
+    margin: auto;
+    text-align:center;
+    padding-top: 50px;
+}
+
+.campuses h1{
+    transition:1s;
+    font-size: 36px;
+}
+.campuses h1:hover{
+    font-size: 45px;
+}
+.campuses p{
+    font-size: 14px;
+    color: gray;
+    padding-bottom: 30px;
+}
+.image1{
+    display: inline-block;
+    padding-top: 30px;
+    margin-top: 20px;
+    background-image: url(images/China.jpg);
+    width: 31%;
+    height: 600px;
+    background-position: center;
+    border-radius: 10px;
+    transition:1s;
+    margin-bottom: 100px;
+}
+
+.image1 p{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(251, 251, 251);
+    font-family: 'Akaya Telivigala', cursive;
+    transition: 1s;
+}
+
+.image1:hover{
+    background: rgba(226, 107, 107,1);
+}
+
+.image2{
+    display: inline-block;
+    padding-top: 30px;
+    margin-top: 20px;
+    background-image: url(images/American.jpg);
+    width: 31%;
+    height: 600px;
+    background-position: center;
+    border-radius: 10px;
+    transition:1s;
+    margin-bottom: 100px;
+}
+
+.image2 p{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Akaya Telivigala', cursive;
+    transition: 1s;
+}
+
+.image2:hover{
+    background: rgba(121, 226, 107,1);
+}
+
+.image3{
+    display: inline-block;
+    padding-top: 30px;
+    margin-top: 20px;
+    background-image: url(images/Indian.jpg);
+    width: 31%;
+    height: 600px;
+    background-position: center;
+    border-radius: 10px;
+    transition:1s;
+    margin-bottom: 100px;
+}
+
+.image3 p{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Akaya Telivigala', cursive;
+    transition: 1s;
+}
+
+.image3:hover{
+    background: rgb(107, 208, 226,1);
+}
+.statements{
+    text-align: center;
+}
+.statements h1{
+    transition: 1s;
+    font-size: 36px;
+}
+
+.statements h1:hover{
+    font-size: 45px;
+}
+
+.statements p{
+    font-size: 14px;
+    color: gray;
+}
+
+.state1{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    background-color:rgb(216, 183, 36);
+    margin: 50px 50px;
+    overflow: hidden;
+    padding: 10px;
+
+}
+.state1:hover{
+    box-shadow: 0 0 20px 0 rgb(216, 183, 36);
+}
+.state1 img{ 
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.state1 p{
+    color: black;
+}
+
+.name{
+    text-align: right;
+}
+
+.state2{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    background-color:rgb(216, 183, 36);
+    margin: 50px 50px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.state2:hover{
+    box-shadow: 0 0 20px 0 rgb(216, 183, 36);
+}
+.state2 img{ 
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.state2 p{
+    color: black;
+}
+
+.ending{
+    margin-top: 100px;
+    text-align: center;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 60vh;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    color: rgb(0, 0, 0);
+}
+.ending h1{
+    transition:1s;
+}
+.ending h1:hover{
+    font-size:35px
+}
+.ending a{
+    margin-top: 30px;
+}
+.button2{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    transition:0.5s;
+}
+.button2:hover{
+    background-color: brown;
+}
+
+.last{
+    text-align: center;
+}
+
+.Contributions{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about_me{
+    text-align: center;
+    padding-left:40px;
+    padding-right: 40px;
+    font-size: 40px;
+}
+.space{
+    padding-left: 50px;
+    padding-right: 50px;
+}
